@@ -95,7 +95,7 @@ def process_journal(file_path):
 if __name__ == "__main__":
     result = process_journal(r"c:\Kingston\Prog\Blog_Augu\UWC Journal pour imprimer.txt")
     
-    with open(r"c:\Kingston\Prog\Blog_Augu\data.js", "w", encoding="utf-8") as f:
+    with open(r"c:\Kingston\Prog\Blog_Augu\docs\data.js", "w", encoding="utf-8") as f:
         f.write("const blogData = ")
         json.dump(result, f, ensure_ascii=False, indent=2)
         f.write(";\n\nexport default blogData;")
